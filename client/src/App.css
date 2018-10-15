@@ -1,0 +1,369 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px !important;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/***********************************************************************************************/
+/* GENERAL STYLES */
+/***********************************************************************************************/
+body {
+  font: 100% / 1.414 "Open Sans", "Roboto", arial, sans-serif;
+  background: #f3f3f3 !important;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  color: #333;
+}
+
+/***********************************************************************************************/
+/* HEADER STYLES */
+/***********************************************************************************************/
+.logo img {
+  width: 75px;
+  height: auto;
+  text-align: center;
+  display: block;
+}
+
+/***********************************************************************************************/
+/* SIGNUP STYLES */
+/***********************************************************************************************/
+.header {
+  background: #ffffff;
+  border-top: 2px solid #ff0606;
+  /* height: 100px; */
+  padding: 14px 0;
+}
+
+.login-container {
+  float: right;
+  margin-top: 6px;
+}
+
+.form-inline input {
+  margin-right: 10px;
+}
+
+.form-inline label {
+  color: #333;
+}
+
+.intro {
+  text-align: center;
+  margin: 50px auto;
+  font-size: 18px;
+  max-width: 600px;
+  width: 100%;
+  background: #ffffff;
+  padding: 10px 15px;
+  overflow: hidden;
+}
+
+.intro h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.intro.login-con {
+  padding: 30px 0px 25px 0px;
+}
+
+.intro.login-con h2 {
+  margin-bottom: 1.5em;
+}
+
+.form-group.col-md-12.btn-container input {
+  float: left;
+}
+
+.invalid-feedback {
+  float: left;
+  color: red;
+  font-size: 12px;
+}
+
+.is-invalid {
+  /* color: red; */
+  border: 1px solid red;
+}
+
+p.policy {
+  font-size: 14px;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.login-container button.btn-dark {
+  padding: 5px 20px;
+}
+
+.registration.clearfix input {
+  height: 45px;
+}
+
+.btn-dark {
+  background: #555;
+  background: #444;
+  background-image: linear-gradient(#666, #4d4d4d);
+  border: 1px solid #404040;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+input.btn-dark.btn-rgister {
+  padding: 12px 30px;
+  /* font-size: 15px; */
+}
+
+.form-group.col-md-12.btn-container {
+  margin: 25px auto;
+}
+
+input.btn-dark.btn-rgister {
+  padding: 8px 30px;
+  /* font-size: 15px; */
+}
+
+.registration.clearfix {
+  margin-top: 60px;
+}
+
+.signup_thumbnail {
+  flex-basis: 50%;
+}
+
+.signup__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.76);
+}
+
+.signup_thumbnail {
+  position: relative;
+  padding: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  background: url(http://rebap.com.ph/wp-content/uploads/2018/03/IMG-806583afbc36742ce8579e2c0cf0ed42-V-2.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.signup_form {
+  flex-basis: 50%;
+  padding: 2.5rem;
+  background: #ffffff;
+}
+
+.thumbnail__logo,
+.thumbnail__content,
+.thumbnail__links {
+  position: relative;
+  z-index: 2;
+}
+
+.intro label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #333;
+  display: inline-block;
+  /* text-align: left; */
+  float: left;
+  font-size: 11px;
+}
+
+.heading-primary {
+  font-size: 1.999rem;
+}
+
+.heading--secondary {
+  font-size: 1.414rem;
+}
+
+.m-t-lg,
+.m-y-lg {
+  margin-top: 3rem !important;
+}
+
+.list-inline {
+  margin-left: -5px;
+}
+
+.list-inline > li {
+  padding-right: 5px;
+  padding-left: 5px;
+  display: inline-block;
+}
+
+.btn--form {
+  padding: 0.5rem 2.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background: #ea0a02;
+  border-radius: 2.1875rem;
+  border: none;
+}
+
+.signup__link {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: underline;
+  color: #999;
+}
+
+.btn--form:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 900px) {
+  .signup_container {
+    display: flex;
+  }
+}
